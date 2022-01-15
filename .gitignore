@@ -3,3 +3,9 @@ logs/*
 sources/*
 .DS_STore
 
+# File Extensions to Exclude
+*.epub
+
+# Do not exclude the following stuff
+!output/*
+!output/*.*

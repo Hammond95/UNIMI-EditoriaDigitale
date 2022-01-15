@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-ebookmaker = "*"
+ebookmaker = {editable = true, ref = "v12", git = "https://github.com/gutenbergtools/ebookmaker"}
 
 [dev-packages]
 

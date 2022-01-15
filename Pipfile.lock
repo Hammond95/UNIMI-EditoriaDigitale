@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a6d66e0c5c1593cc83509d0759c66a0a706094845bedf7e58c1915ecdfd9904a"
+            "sha256": "fcafb69f0ffa93e7793edb07f530e1cd1dde56a929df3f8660cccece9e5c6c0d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -133,11 +133,12 @@
             "version": "==0.18.1"
         },
         "ebookmaker": {
+            "editable": true,
+            "git": "https://github.com/gutenbergtools/ebookmaker",
             "hashes": [
                 "sha256:14c8c94effdafdcc4adab7c652e9647149f04948d33adcf924ebac304a801221"
             ],
-            "index": "pypi",
-            "version": "==0.11.30"
+            "ref": "537190734b6994f7e17104a84a862326ca56a708"
         },
         "greenlet": {
             "hashes": [
