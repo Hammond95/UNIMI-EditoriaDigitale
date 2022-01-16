@@ -1,7 +1,10 @@
 # Exclude the following
 logs/*
 sources/*
-.DS_STore
+.DS_Store
+.vscode/*
+output/.DS_Store
+output/test/*
 
 # File Extensions to Exclude
 *.epub
