@@ -13,13 +13,6 @@ if __name__ == "__main__":
             os.path.join(this_file_path + "/../ebook/")
         )
     )
-    print(sources_path)
-
-    oebps_path = os.path.abspath(
-        os.path.expanduser(
-            os.path.join(this_file_path + "/../sources/OEBPS/")
-        )
-    )
 
     ebook_path = os.path.abspath(
         os.path.expanduser(
