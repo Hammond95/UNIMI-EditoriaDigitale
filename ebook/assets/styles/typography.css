@@ -1,0 +1,29 @@
+/* Fonts Definition */
+@font-face {
+    font-family: "CormorantGaramond-Bold";
+    src: url("../fonts/CormorantGaramond-Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CormorantGaramond-Regular-Italic";
+    src: url("../fonts/CormorantGaramond-Regular-Italic.otf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CormorantGaramond-Regular";
+    src: url("../fonts/CormorantGaramond-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Fabrik-Bold";
+    src: url("../fonts/Fabrik-Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+

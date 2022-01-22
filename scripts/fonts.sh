@@ -23,6 +23,16 @@ STYLEMAP="Normal|normal
 Italic|italic
 Oblique|oblique"
 
+
+STDOUT="$1"
+if [[ "$STDOUT" == "--stdout" ]]; then
+    OUTFILE="/dev/stdout"
+else
+    OUTFILE="$SCRIPTDIR/../ebook/assets/styles/typography.css"
+fi
+
+echo "/* Fonts Definition */" > $OUTFILE
+
 for file in $(ls -1 ../ebook/assets/fonts); do
     filename=$(echo $file | cut -d'.' -f1)
     ext=$(echo $file | cut -d'.' -f2)
@@ -41,6 +51,6 @@ for file in $(ls -1 ../ebook/assets/fonts); do
         style=$(echo "$STYLEMAP" | grep -E "^$stylekey\|"  | cut -d '|' -f2)
     fi
 
-    cat /tmp/fontface.def | sed "s#§NAME§#$filename#g" | sed "s#§EXT§#$ext#g" | sed "s#§WEIGHT§#$weight#g" | sed "s#§STYLE§#$style#g"
+    cat /tmp/fontface.def | sed "s#§NAME§#$filename#g" | sed "s#§EXT§#$ext#g" | sed "s#§WEIGHT§#$weight#g" | sed "s#§STYLE§#$style#g" >> $OUTFILE
 
 done
