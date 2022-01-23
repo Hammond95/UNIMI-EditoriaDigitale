@@ -1,4 +1,7 @@
 /* Index Page Style */
+#index-container {
+    background-color: #fff;
+}
 .index-section-part {
     padding-top: 2em;
     padding-bottom: 0.6em;

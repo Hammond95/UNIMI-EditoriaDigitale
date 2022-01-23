@@ -15,4 +15,4 @@ curl \
     -s \
     --data-urlencode "input@/tmp/merged-css.css" \
     https://www.toptal.com/developers/cssminifier/raw | \
-    sed 's#url("../fonts/#url("../../fonts/#g' > "$SCRIPTDIR/../ebook/assets/styles/minified/style-min.css"
+    sed 's#url("../fonts/#url("../../fonts/#g' | sed 's#url("../imgs/#url("../../imgs/#g' > "$SCRIPTDIR/../ebook/assets/styles/minified/style-min.css"
