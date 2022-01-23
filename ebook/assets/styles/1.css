@@ -2,6 +2,33 @@
 #index-container {
     background-color: #fff;
 }
+
+#index-title {
+    font-family: 'Fabrik-Bold', sans-serif;
+    margin-bottom: 0em;
+    letter-spacing: .12em;
+    word-spacing: 0em;
+    text-indent: 0;
+    text-align: center;
+    font-size: 5.50em;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+#index-subtitle {
+    font-family: 'CormorantGaramond-Bold', serif;
+    padding-top: 0em;
+    line-height: 1em;
+    letter-spacing: .1em;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    text-indent: 0.6em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    transform: scale(1, 1.15);
+}
+
 .index-section-part {
     padding-top: 2em;
     padding-bottom: 0.6em;
