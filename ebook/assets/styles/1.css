@@ -32,10 +32,35 @@
 .index-section-part {
     padding-top: 2em;
     padding-bottom: 0.6em;
+    font-size: 1.8em;
+    font-family: 'CormorantGaramond-Bold', serif;
 }
+
+.index-section-part > a:link {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.index-section-chapter > a:link {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.index-section-part > a:hover {
+    color: #09BC8A;
+    border-bottom: 1px solid #09BC8A;
+}
+
+.index-section-chapter > a:hover {
+    color: #09BC8A;
+    border-bottom: 1px solid #09BC8A;
+}
+
 
 .index-section-chapter {
     text-indent: 2em;
+    font-size: 1.6em;
+    font-family: 'CormorantGaramond-Bold', serif;
 }
 
 /* Copyright Page Style */
