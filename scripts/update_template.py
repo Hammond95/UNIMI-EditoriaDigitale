@@ -1,3 +1,4 @@
+import re
 import os
 import shutil
 import xml.etree.ElementTree as ET
@@ -60,6 +61,10 @@ if __name__ == "__main__":
                     os.path.join(ebook_path, xfile), 
                     "/tmp/{}".format(xfile)
                 )
+
+                # Removes all lines empty or with spaces only
+                body_value = re.sub(r'^[\s]*\n', '', body_value, flags=re.MULTILINE)
+
                 with open(os.path.join(ebook_path, xfile), "w") as out:
                     out.write(
                         template_file.format(bodycontent=body_value)

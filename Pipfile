@@ -13,4 +13,5 @@ libgutenberg = "==0.8.15"
 python_version = "3.8"
 
 [scripts]
+build = './scripts/build.sh'
 build-epub = 'ebookmaker -v -v --make=epub.images --output-dir ./output/ --max-depth 4 --config ./ebookmaker.conf  ./ebook/00.html --output-file whitefang'
