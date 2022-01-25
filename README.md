@@ -1,6 +1,10 @@
 # UNIMI-EditoriaDigitale
 Repository for the project related to my exam of Digital Publishing at UNIMI.
 
+## Preview
+
+![Preview of The Ebook](./design/preview-withopts-scaled-960.gif)
+
 ## Creative Process
 
 ### Tools
