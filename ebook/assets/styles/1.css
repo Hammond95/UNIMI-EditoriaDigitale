@@ -13,6 +13,7 @@
     font-size: 5.50em;
     font-weight: bold;
     line-height: 1.4em;
+    page-break-before: always;
 }
 
 #index-subtitle {
@@ -175,6 +176,46 @@ div.fig {
     margin-bottom: 1em
 }
 
-div.figcenter span.caption {
-    display: block
+/* TODO 
+ * At the moment the caption hr+span associated to the image,
+ * is not strictly tied together with the image.
+ * Visualization on ebook readers results in caption showed on the next page.
+ * The idea is that the image and its caption should be a single block.
+ */ 
+div.fig > span.caption {
+    display: block;
+    margin-top: 1.2em;
+    text-align: center;
+    line-height: 1.3em;
+    font-family: serif;
+    page-break-after: avoid;
+    page-break-before: avoid;
+}
+
+div.fig > hr {
+    width: 15%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    left: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.image-box {    
+    position: absolute;
+    display: block;
+    max-height: 100%;
+    margin: 0;
+    padding: 0.2em 1em 0.2em 1em;
+    overflow: visible;
+    left: 50%;
+    max-width: 45%;
+}
+
+img.illustration {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -50%;
 }
